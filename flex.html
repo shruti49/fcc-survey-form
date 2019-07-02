@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="flex.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="speaker-form-header">
+      <h1 id="title">Speaker Submission</h1>
+      <p id="description">
+        <em>Want to speak at our fake conference? Fill out this form.</em>
+      </p>
+    </header>
+    <form action="" method="get" class="speaker-form" id="survey-form">
+      <div class="form-row">
+        <label for="name" id="name-label">Name</label>
+        <input
+          id="name"
+          name="full-name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label for="email" id="email-label">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label for="number" id="number-label">Name</label>
+        <input
+          id="number"
+          name="age"
+          type="number"
+          min="20"
+          max="50"
+          placeholder="Enter your age"
+          required
+        />
+      </div>
+      <fieldset class="legacy-form-row">
+        <legend>Type Of talk</legend>
+        <input id="talk-type-1" type="radio">
+        <label id="talk-type-1" for=""></label>
+      </fieldset>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
