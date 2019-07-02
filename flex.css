@@ -16,6 +16,7 @@ body {
   align-items: center;
 }
 
+/****HEADER******/
 .speaker-form-header {
   text-align: center;
   background-color: #f6f7f8;
@@ -32,6 +33,7 @@ body {
   margin-bottom: 20px;
 }
 
+/****FORM*****/
 .speaker-form {
   background-color: #f6f7f8;
   border: 1px solid #d6d9dc;
@@ -42,6 +44,7 @@ body {
   margin: 0 0 40px 0;
 }
 
+/******FORM ITEMS*****/
 .form-row {
   display: flex;
   flex-direction: column;
@@ -73,9 +76,10 @@ body {
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 
+/****RADIO BUTTON*****/
 .legacy-form-row {
   border: none;
-  margin-bottom: 40px;
+  margin: 40px 0px 40px 40px;
 }
 
 .legacy-form-row legend {
@@ -97,6 +101,63 @@ body {
   float: left;
 }
 
+/****DROPDOWN*****/
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  -webkit-appearance: none; /* This will make it work */ /* This won't work in Chrome or Safari */
+}
+
+/*********TEXTAREA***********/
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+/*********CHECKBOX************/
+.form-row .instructions {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.form-row .checkbox-label {
+  margin-bottom: 0;
+}
+
+/*******BUTTON*****/
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+/**********MEDIA QUERIES***********/
 @media only screen and (min-width: 700px) {
   .speaker-form-header,
   .speaker-form {
@@ -132,6 +193,14 @@ body {
   .legacy-form-row legend {
     float: left;
   }
-
-
+  .form-row .instructions {
+    margin-left: 120px;
+  }
+  .form-row .checkbox-label {
+    margin-left: 120px;
+    width: auto;
+  }
+  .form-row button {
+    margin-left: 120px;
+  }
 }
